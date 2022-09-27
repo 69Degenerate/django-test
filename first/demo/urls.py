@@ -20,7 +20,7 @@ from demo import views
 # from django.conf.urls import url
 # from django.conf import settings
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('',views.login),
     path('create',views.create),
     path('home',views.home,name='home'),
