@@ -4,4 +4,5 @@ from django.shortcuts import render,redirect,HttpResponse
 from django.contrib import messages
 
 def home(request):
-    return HttpResponse("hello there")
+    # return HttpResponse("hello there")
+    return render(request,'home.html')
