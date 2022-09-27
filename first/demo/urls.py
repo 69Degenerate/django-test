@@ -21,7 +21,10 @@ from demo import views
 # from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
-    # url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+    path('',views.login),
+    path('create',views.create),
+    path('home',views.home,name='home'),
+    path("about", views.about, name='about'),
+    path("services", views.services, name='services'),
+    path("contact", views.contact, name='contact'), 
 ]
